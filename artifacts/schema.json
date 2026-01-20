@@ -1,0 +1,27 @@
+{
+  "target_original": "DEFASAGEM_2021",
+  "target_binary": "risk_defasagem",
+  "risk_rule": "risk=1 if DEFASAGEM_2021 < 0 else 0",
+  "features": [
+    "INSTITUICAO_ENSINO_ALUNO_2020",
+    "IDADE_ALUNO_2020",
+    "ANOS_PM_2020",
+    "FASE_TURMA_2020",
+    "PONTO_VIRADA_2020",
+    "INDE_2020",
+    "INDE_CONCEITO_2020",
+    "PEDRA_2020",
+    "DESTAQUE_IEG_2020",
+    "DESTAQUE_IDA_2020",
+    "DESTAQUE_IPV_2020",
+    "IAA_2020",
+    "IEG_2020",
+    "IPS_2020",
+    "IDA_2020",
+    "IPP_2020",
+    "IPV_2020",
+    "IAN_2020"
+  ],
+  "n_rows_used": 686,
+  "n_features": 18
+}

@@ -1,0 +1,15 @@
+[run]
+branch = True
+source =
+    app
+    src
+omit =
+    src/train.py
+    src/data_load.py
+    notebooks/*
+    data/*
+    */__init__.py
+
+[report]
+show_missing = True
+skip_covered = True

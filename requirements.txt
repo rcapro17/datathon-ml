@@ -1,0 +1,26 @@
+# Core ML / Data
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+
+# API (Flask)
+Flask>=3.0
+gunicorn>=22.0
+
+# Monitoring / Drift
+evidently>=0.4
+
+# Testing + Coverage
+pytest>=8.3
+pytest-cov>=5.0
+
+gunicorn>=22.0
+
+
+# Utilities
+python-dotenv>=1.0
+
+evidently>=0.5.0
+numpy
+pandas
