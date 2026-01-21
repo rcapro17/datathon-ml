@@ -1,4 +1,7 @@
 from __future__ import annotations
+from src.transformers import CoerceNumericTransformer
+
+
 
 import json
 from pathlib import Path
@@ -128,13 +131,15 @@ def build_pipeline(X: pd.DataFrame) -> Pipeline:
 
     # Importante: sem lambda (para joblib/pickle funcionar)
     to_numeric = FunctionTransformer(coerce_numeric_df, validate=False)
+   
+
 
     numeric_transformer = Pipeline(
-        steps=[
-            ("to_numeric", to_numeric),
-            ("imputer", SimpleImputer(strategy="median")),
-        ]
-    )
+    steps=[
+        ("to_numeric", CoerceNumericTransformer()),
+        ("imputer", SimpleImputer(strategy="median")),
+    ]
+)
 
     categorical_transformer = Pipeline(
         steps=[
